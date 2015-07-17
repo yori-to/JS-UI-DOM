@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Practice-dom</title>
+</head>
+<body>
+    <ul>
+    	<li id="name"></li>
+    	<li id="address"></li>
+    </ul>
+    <div>
+    	<input type="text" id="my-name" placeholder="Your name"/>
+    	<button id="get-name" onclick="getname()">Put Name</button><br/>
+    	<input type="text" id="my-address" placeholder="Your address"/>
+    	<button id="get-address" onclick="getaddress()">Put Address</button>
+    </div>
+    <script>
+    var inputName = document.getElementById('my-name');
+    var inputAddress = document.getElementById('my-address');
+    function getname(){
+    	var valueName = inputName.value;
+    	document.getElementById('name').innerText = valueName;
+    };
+    
+    function getaddress(){
+    	var valueAddress = inputAddress.value;
+    	document.getElementById('address').innerText = valueAddress;
+    };
+
+    </script>
+</body>
+</html>
