@@ -28,6 +28,13 @@
     	document.getElementById('address').innerText = valueAddress;
     };
 
+    var liCollection = document.getElementsByTagName('li');
+    console.log(liCollection);
+
+    for(var i = 0, len = liCollection.length; i < len; i += 1){
+    	liCollection[i].id = i;
+    }
+
     </script>
 </body>
 </html>
